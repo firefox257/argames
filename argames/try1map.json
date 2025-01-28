@@ -1,0 +1,6 @@
+{
+	"imports": {
+		"TT1": "./try1.js",
+		"three/addons/": "./script/jsm/"
+	}
+}

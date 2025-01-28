@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width">
+
+<head>
+	<title>Game Make</title>
+</head>
+
+
+<style>
+
+html, body
+{
+	margin:0;
+	height:100%;
+	overflow: hidden;
+	
+	color: #fff;
+	font-size:5mm;	
+	background-color:#000;
+}
+
+</style>
+<script src="script/api.js"></script>
+<script type="importmap">
+	{
+		"imports": {
+			"three": "./script/build/three.module.js",
+			"three/addons/": "./script/jsm/"
+		}
+	}
+</script>
+
+
+<body onload="start();">
+	
+	
+	
+	
+	<script type="module">
+	
+	
+		$getLib("./script/InitWorld.js", false);
+		$getLib("./script/InitView.js", false);
+		
+		globalThis.start= async ()=>
+		{
+			/*$msgc("init world");
+			$msgc("init view");*/
+			$msgc.run(`
+			"init world"
+			"init view"
+			`);
+		}
+		
+		
+		
+	</script>
+   
+</body>
+</html>	
+
